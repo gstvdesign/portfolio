@@ -17,7 +17,7 @@ const Nav = styled.nav`
 export default function TopNav() {
   return (
     <Nav>
-      <p>Gustavo Nering's portfolio</p>
+      <p>Portfolio by Gustavo Nering</p>
     </Nav>
   )
 }

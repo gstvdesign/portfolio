@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image"
 
 const Container = styled.div`
     width: 100%;
@@ -39,11 +40,48 @@ export default function Footer() {
     <Container>
       <FollowTitle>Follow me!</FollowTitle>
       <SocialContainer>
-        <a href="https://twitter.com/gustavonering"><img src="/social/twitter.png" alt="" /></a>
-        <a href="https://www.instagram.com/gustavonering/"><img src="/social/instagram.png" alt="" /></a>
-        <a href="https://medium.com/@gustavonering"><img src="/social/medium.png" alt="" /></a>
-        <a href="https://www.linkedin.com/in/gustavonering/"><img src="/social/linkedin.png" alt="" /></a>
-        <a href="https://www.behance.net/gstvdesign"><img src="/social/behance.png" alt="" /></a>
+        <a href="https://twitter.com/gustavonering">
+          <Image 
+            src="/social/twitter.png" 
+            width={24}
+            height={24}
+            alt="twitter" />
+        </a>
+        <a href="https://www.instagram.com/gustavonering/">
+          <Image 
+            src="/social/instagram.png"
+            width={24}
+            height={24} 
+            alt="instagram" />
+        </a>
+        <a href="https://medium.com/@gustavonering">
+          <Image 
+            src="/social/medium.png" 
+            width={24}
+            height={24}
+            alt="medium" />
+        </a>
+        <a href="https://www.linkedin.com/in/gustavonering/">
+          <Image 
+            src="/social/linkedin.png" 
+            width={24}
+            height={24}
+            alt="linkedin" />
+        </a>
+        <a href="https://www.behance.net/gstvdesign">
+          <Image 
+            src="/social/behance.png" 
+            width={24}
+            height={24}
+            alt="behance" />
+        </a>
+        <a href="https://github.com/gstvdesign">
+          <Image 
+            src="/social/github.png" 
+            width={24}
+            height={24}
+            alt="github" />
+        </a>
       </SocialContainer>
       <FooterContainer>
         <p>Code and design by Gustavo Nering © 2021</p>
