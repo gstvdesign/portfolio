@@ -6,13 +6,13 @@ I used [Next.js](https://nextjs.org/), [styled components]() for styling, and [D
 
 ## TO DOs
 
-[] Smarter styling
+- [ ] Smarter styling
 
 I didn't have much time to build the portfolio so there is a lot of repetition of values. Also everything is measured in pixels (I prefer relative measures – em, rem, % or fr – than fixed pixels). 
 
-[] Mobile experience
+- [ ] Mobile experience
 
-[] Animations and interactions
+- [ ] Animations and interactions
 
 ## Made with Next JS bootstrap
 
