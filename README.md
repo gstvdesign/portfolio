@@ -2,7 +2,7 @@ This is a portfolio website that presents my work as a UX designer.
 
 ## Tech stack
 
-I used [Next.js](https://nextjs.org/), [styled components]() for styling, and [Dato CMS]() to manage the content.
+I used [Next.js](https://nextjs.org/), [styled components](https://styled-components.com/) for styling, and [Dato CMS](https://www.datocms.com/) to manage the content.
 
 ## TO DOs
 
