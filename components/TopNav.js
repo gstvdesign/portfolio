@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Link from "next/link"
 
 const Nav = styled.nav`
   background: linear-gradient(180deg, #EBF2FF 0%, #F0F9F9 100%);
@@ -17,7 +18,7 @@ const Nav = styled.nav`
 export default function TopNav() {
   return (
     <Nav>
-      <p>Portfolio by Gustavo Nering</p>
+      <Link href="#about"><a>Portfolio by Gustavo Nering</a></Link>
     </Nav>
   )
 }

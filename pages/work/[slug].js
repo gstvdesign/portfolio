@@ -64,7 +64,15 @@ export default function WorkPost( props ) {
         <Brief>{brief}</Brief>
         <Image data={featuredImage.responsiveImage} />
         <TextContainer>
-          <StructuredText data={article.value} />
+          <StructuredText data={article}
+            renderBlock={({ record }) => {
+              switch (record.__typename) {
+                case 'ImageRecord':
+                  return <Image data={record.image.responsiveImage} />;
+                default:
+                  return null;
+              }
+            }}/>
         </TextContainer>
       </Container>
     </Layout>
@@ -93,11 +101,33 @@ export const getStaticPaths = async () => {
 
 const JOBQUERY =`query MyQuery($slug: String) {
   work(filter: {slug: {eq: $slug}}) {
-    title
-    role
     brief
+    role
+    slug
+    title
     article {
       value
+      blocks {
+        __typename
+        ... on ImageRecord {
+          id
+          image {
+            responsiveImage {
+              alt
+              aspectRatio
+              base64
+              bgColor
+              height
+              sizes
+              src
+              srcSet
+              title
+              webpSrcSet
+              width
+            }
+          }
+        }
+      }
     }
     featuredImage {
       responsiveImage {
@@ -107,16 +137,15 @@ const JOBQUERY =`query MyQuery($slug: String) {
         bgColor
         height
         sizes
+        src
         srcSet
         title
         webpSrcSet
         width
       }
     }
-    slug
   }
-}
-`
+}`
 
 export const getStaticProps = async ({ params }) => {
   const job = await request({

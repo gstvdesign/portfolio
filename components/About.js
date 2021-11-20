@@ -27,7 +27,7 @@ const Content = styled.div`
 
 export default function About(props) {
   return (
-    <Container>
+    <Container id="about">
       <SecondaryTitle title="A bit about me" />
       <ContentContainer>
         <Avatar>
