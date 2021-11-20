@@ -11,8 +11,9 @@ I used [Next.js](https://nextjs.org/), [styled components](https://styled-compon
 I didn't have much time to build the portfolio so there is a lot of repetition of values. Also everything is measured in pixels (I prefer relative measures – em, rem, % or fr – than fixed pixels). 
 
 - [ ] Mobile experience
-
 - [ ] Animations and interactions
+- [ ] Create a space for articles 
+- [ ] Bring all articles to this website
 
 ## Made with Next JS bootstrap
 
