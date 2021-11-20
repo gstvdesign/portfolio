@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: 'Manuale', serif;
   scroll-behavior: smooth;
+  color: #464646;
 }
 
 h1, h2 {

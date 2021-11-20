@@ -18,7 +18,7 @@ const Nav = styled.nav`
 export default function TopNav() {
   return (
     <Nav>
-      <Link href="#about"><a>Portfolio by Gustavo Nering</a></Link>
+      <Link href="/#about"><a>Portfolio by Gustavo Nering</a></Link>
     </Nav>
   )
 }

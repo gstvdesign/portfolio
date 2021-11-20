@@ -2,7 +2,7 @@ import React from "react";
 import styled, { ThemeProvider } from "styled-components";
 
 const Title = styled.h2`
-  background: -webkit-linear-gradient(105.97deg, #89043D 24.16%, #183F3F 70.93%);
+  background: -webkit-linear-gradient(97.97deg,#183F3F 49.16%,#89043D 82.93%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 42px;

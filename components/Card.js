@@ -6,14 +6,20 @@ import Button from "./Button";
 
 const Container = styled.div`
   color: #636363;
-  width: 200px;
+  width: 220px;
   display: flex;
   flex-direction: column;
   padding: 16px;
   box-shadow: 0px 0px 20px rgba(135, 135, 135, 0.2);
   border-radius: 4px;
+  transition: all ease-in 50ms;
   > div {
     margin-bottom: 16px;
+  }
+  :hover {
+    transform: scale(1.05);
+    transition: all ease-in 200ms;
+    box-shadow: 0px 0px 28px rgba(135, 135, 135, 0.3);
   }
 `
 const Title = styled.h3`
@@ -24,9 +30,7 @@ const Title = styled.h3`
 const Role = styled.p`
   margin-bottom: 12px;
   font-family: 'Work Sans', sans-serif;
-  font-weight: 700;
   font-size: 12px;
-  color: #183f3f;
   text-transform: uppercase;
   letter-spacing: 2px;
 `
