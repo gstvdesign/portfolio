@@ -41,14 +41,49 @@ const Divider = styled.div`
 
 const Brief = styled.p`
   margin-bottom: 16px;
-  font-size: 16px;
+  font-size: 3rem;
   color: #89043d;
   text-align: center;
 `
 
 const TextContainer = styled.div`
-  width: 640px;
   margin: 36px auto;
+  overflow: visible;
+  p, h2, ul, blockquote {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+  blockquote {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid #a1e8af;
+    font-size: 1.25rem;
+    footer {
+      font-size: 1rem;
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #A1E8AF, #AFCBFF, #A1E8AF);
+    margin: 4rem;
+  }
+  img {
+    margin: 2rem 0;
+    height: auto !important;
+    box-shadow: 0px 0px 12px rgba(135, 135, 135, 0.1);
+  }
 `
 
 export default function WorkPost( props ) {

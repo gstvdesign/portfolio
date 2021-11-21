@@ -49,15 +49,11 @@ const CardTitle = styled.div`
   color: #aea4bf;
 `
 
-const CardContent = styled.p`
-
-`
-
 export default function Hire( props ) {
   const cardContent = props.cardContent
 
   return (
-    <Container>
+    <Container id="hire">
       <TitleContainer>
         <SecondaryTitle title="Why hire me?" />
       </TitleContainer>

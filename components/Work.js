@@ -23,7 +23,7 @@ export default function Work( props ) {
   const cardData = props.workData
 
   return (
-    <div>
+    <div id="work">
       <SecondaryTitle title="Know some of my work" align="center" />
       <Container>
         
