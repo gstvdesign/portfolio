@@ -9,6 +9,9 @@ const Container = styled.div`
   width: 960px;
   margin: 0 auto;
   color: #636363;
+  @media(max-width: 960px) {
+    max-width: 640px;
+  }
 `
 
 const Role = styled.p`
@@ -40,8 +43,8 @@ const Divider = styled.div`
 `
 
 const Brief = styled.p`
-  margin-bottom: 16px;
-  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-size: 1rem;
   color: #89043d;
   text-align: center;
 `
@@ -52,6 +55,9 @@ const TextContainer = styled.div`
   p, h2, ul, blockquote {
     max-width: 640px;
     margin: 0 auto;
+    @media(max-width: 960px) {
+      margin: auto 1rem;
+    }
   }
   p {
     margin-bottom: 1rem;
@@ -83,6 +89,9 @@ const TextContainer = styled.div`
     margin: 2rem 0;
     height: auto !important;
     box-shadow: 0px 0px 12px rgba(135, 135, 135, 0.1);
+    @media(max-width: 960px) {
+      margin: 2rem 1rem
+    }
   }
 `
 

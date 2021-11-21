@@ -8,15 +8,10 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 120px;
-`
-
-const Title = styled.h2`
-  background: -webkit-linear-gradient(105.97deg, #89043D 24.16%, #183F3F 70.93%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 42px;
-  font-size: 32px;
-  text-align: center;
+  flex-wrap: wrap;
+  @media(max-width: 980px) {
+    width: 490px;
+  }
 `
 
 export default function Work( props ) {

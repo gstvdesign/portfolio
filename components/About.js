@@ -7,17 +7,27 @@ const Container = styled.div`
   width: 800px;
   margin: 0 auto;
   margin-bottom: 100px;
+  @media(max-width: 800px) {
+    width: 400px;
+  }
 `
 
 const ContentContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  @media(max-width: 800px) {
+    flex-direction: column;
+  }
 `
 
 const Avatar = styled.div`
   flex-basis: 140px;
   img {
     border-radius: 50%;
+  }
+  @media(max-width: 800px) {
+    width: 140px;
+    margin-bottom: 1rem;
   }
 `
 

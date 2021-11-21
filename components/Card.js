@@ -21,6 +21,9 @@ const Container = styled.div`
     transition: all ease-in 200ms;
     box-shadow: 0px 0px 28px rgba(135, 135, 135, 0.3);
   }
+  @media(max-width: 980px) {
+    margin-bottom: 2rem;
+  }
 `
 const Title = styled.h3`
   font-size: 20px;

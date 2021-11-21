@@ -9,9 +9,12 @@ const Container = styled.div`
   border-radius: 8px;
   font-family: 'Manuale', serif;
   color: #89043D;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 34px;
   text-align: center;
+  @media(max-width: 800px) {
+    width: 400px;
+  }
 `
 
 export default function Headline( props ) {

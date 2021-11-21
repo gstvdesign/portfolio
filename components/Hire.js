@@ -8,8 +8,10 @@ const Container = styled.div`
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, auto);
   margin-bottom: 112px;
+  @media(max-width: 800px) {
+    width: 400px;
+  }
 `
 
 const TitleContainer = styled.div`
@@ -25,6 +27,9 @@ const Excerpt = styled.p`
   font-size: 20px;
   font-weight: 700;
   color: #636363;
+  @media(max-width: 800px) {
+    grid-column: span 4;
+  }
 `
 
 const Card = styled.div`
@@ -34,6 +39,13 @@ const Card = styled.div`
   border-left: 1px solid #a1e8af;
   :last-child {
     border-right: 1px solid #a1e8af;
+  }
+  @media(max-width: 800px) {
+    grid-column: span 4;
+    grid-row: auto;
+    :last-child {
+    border-right: 0px;
+  }
   }
 `
 const ImageContainer = styled.div`
@@ -67,7 +79,7 @@ export default function Hire( props ) {
                   <Image data={image.responsiveImage} />
                 </ImageContainer>
                 <CardTitle>{title}</CardTitle>
-                <CardContent>{explanation}</CardContent>
+                <p>{explanation}</p>
               </Card>
           )
         })}
