@@ -8,13 +8,16 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media( max-width: 800px) {
+    width: fit-content;
+  }
 `
 
 export default function Layout({children}) {
   return (
     <Container>
       <TopNav />
-      {children}
+        {children}
       <Footer />
     </Container>
   )

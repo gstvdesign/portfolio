@@ -8,6 +8,7 @@ const Container = styled.div`
     transition: all ease-out 300ms;
     transform: rotate(15deg);
   }
+  margin: 1rem;
 `
 
 const Title = styled.h1`

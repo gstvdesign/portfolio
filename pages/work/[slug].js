@@ -12,6 +12,10 @@ const Container = styled.div`
   @media(max-width: 960px) {
     max-width: 640px;
   }
+  @media(max-width: 640px) {
+    max-width: auto;
+    margin: 1rem auto;
+  }
 `
 
 const Role = styled.p`
